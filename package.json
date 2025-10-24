@@ -26,5 +26,8 @@
     "src/**/*.{ts,tsx,js,jsx,json,md,yml,yaml,css,scss}": [
       "prettier --write"
     ]
+  },
+  "dependencies": {
+    "@marp-team/marp-cli": "^4.2.3"
   }
 }
