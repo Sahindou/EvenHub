@@ -1,0 +1,30 @@
+{
+  "name": "eventhub-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "src/client",
+    "src/server"
+  ],
+  "scripts": {
+    "prepare": "husky",
+    "client:dev": "npm run dev --workspace=client",
+    "server:dev": "npm run dev --workspace=server",
+    "client:build": "npm run build --workspace=client",
+    "server:build": "npm run build --workspace=server",
+    "install:all": "npm install",
+    "clean": "rm -rf node_modules src/*/node_modules"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^20.1.0",
+    "@commitlint/config-conventional": "^20.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.6",
+    "prettier": "^3.6.2"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx,js,jsx,json,md,yml,yaml,css,scss}": [
+      "prettier --write"
+    ]
+  }
+}

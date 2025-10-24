@@ -4,7 +4,10 @@ node_modules
 
 package-lock.json
 
-.dockerignore
-
 # Husky
 .husky/_
+
+# Environment variables (keep .env.production for production reference)
+.env
+.env.local
+.env.*.local
