@@ -1,4 +1,10 @@
 src/client/node_modules
 src/server/node_modules
+node_modules
+
+package-lock.json
 
 .dockerignore
+
+# Husky
+.husky/_
